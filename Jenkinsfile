@@ -14,8 +14,9 @@ pipeline {
 
         stage('Terraform Init') {
 
-        withCredentials([file(credentialsId: 'GCP-SA-Creds')]) 
+        
             steps {
+                withCredentials([file(credentialsId: 'GCP-SA-Creds')]) 
                 sh 'terraform init'
             }
         }
