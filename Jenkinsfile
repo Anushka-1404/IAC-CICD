@@ -8,7 +8,7 @@ pipeline {
     
     stage('Clone repo'){
         steps {
-        git branch: 'master', git credentialsId: '698c50d6-c901-40b5-8994-5454d0955f9f', url: 'https://github.com/Anushka-1404/IAC-CICD.git'
+        git branch: 'master', credentialsId: '698c50d6-c901-40b5-8994-5454d0955f9f', url: 'https://github.com/Anushka-1404/IAC-CICD.git'
         }
     }
 
